@@ -47,5 +47,12 @@
 ;; this is a matter of preference, I prefer keeping it off.
 (global-hl-line-mode -1)
 
+(use-package editorconfig
+  :diminish
+  :config
+  (editorconfig-mode 1))
+
+
+
 (provide 'init-editor)
 ;;; init-editor.el ends here
