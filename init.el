@@ -20,3 +20,4 @@
 (require 'init-ui)
 (require 'init-vcs)
 (require 'init-themes)
+(require 'init-editor)
