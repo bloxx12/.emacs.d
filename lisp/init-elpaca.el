@@ -2,6 +2,14 @@
 ;;; Commentary:
 ;; This file bootstraps elpaca for my configuration.
 ;;; Code:
+
+
+
+
+;; TODO: make this configurable easily
+(setq elpaca-core-date '(20240923)) ;; set to the build date of Emacs
+
+
 (defvar elpaca-installer-version 0.7)
 (defvar elpaca-directory (expand-file-name "elpaca/" user-emacs-directory))
 (defvar elpaca-builds-directory (expand-file-name "builds/" elpaca-directory))
@@ -43,6 +51,7 @@
 
 (elpaca elpaca-use-package
   (elpaca-use-package-mode))
+
 
 
 
