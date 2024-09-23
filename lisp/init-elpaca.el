@@ -52,7 +52,8 @@
 (elpaca elpaca-use-package
   (elpaca-use-package-mode))
 
-
+(require 'use-package-ensure)
+(setq use-package-always-ensure t)
 
 
 (provide 'init-elpaca)

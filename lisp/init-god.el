@@ -5,7 +5,6 @@
 ;;; Code
 
 (use-package god-mode
-  :ensure t
   :config
   (defun my-god-mode-update-cursor-type ()
   (setq cursor-type (if (or god-local-mode buffer-read-only) 'box 'bar)))
