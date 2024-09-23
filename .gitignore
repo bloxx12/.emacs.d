@@ -9,3 +9,14 @@
 
 # Undo-tree save-files
 *.~undo-tree
+
+# eln-cache
+/eln-cache
+
+# auto save list
+/auto-save-list
+# transient
+/transient
+
+# elpaca
+/elpaca
