@@ -2,8 +2,6 @@
 ;;; Commentary:
 ;;; Code:
 
-(use-package modus-themes)
-(use-package ef-themes)
 (use-package zenburn-theme
   :config
 (load-theme 'zenburn t))
