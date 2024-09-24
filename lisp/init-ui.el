@@ -28,5 +28,16 @@
 (column-number-mode t)
 (size-indication-mode t)
 
+
+(use-package fontaine
+  :config
+  (setq fontaine-presets
+   '((regular
+	  :default-family "Iosevka"
+	  :default-height 100
+	  :variable-pitch-family "Lexend")))
+  (fontaine-set-preset 'regular))
+
+
 (provide 'init-ui)
 ;;; init-ui.el ends here
