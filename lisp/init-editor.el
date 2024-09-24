@@ -35,10 +35,11 @@
 (delete-selection-mode t)
 
 ;; save any backup files in /tmp/ to keep projects clean
- (setq backup-directory-alist
+(setq backup-directory-alist
           `((".*" . ,temporary-file-directory)))
-    (setq auto-save-file-name-transforms
+(setq auto-save-file-name-transforms
           `((".*" ,temporary-file-directory t)))
+;;(setq abbrev-file-name nil)
 
 ;; revert buffers automatically when the corresponding files change in the backgound
 (global-auto-revert-mode t)
@@ -52,6 +53,12 @@
   :config
   (editorconfig-mode 1))
 
+(use-package ws-butler
+  :diminish
+  :hook (after-init . ws-butler-global-mode))
+
+(use-package rainbow-delimiters
+  :hook (prog-mode . rainbow-delimiters-mode))
 
 
 (provide 'init-editor)

@@ -32,26 +32,33 @@
 
 (setq custom-file (locate-user-emacs-file "custom.el"))
 
+
+
 ;; Initialize elpaca, my main package manager.
 (require 'init-elpaca)
 
 ;; I use diminish to make my packages shut up, I load it here to ensure it's available.
+(use-package diminish)
+
 ;; Packages
 (require 'init-god)
 (require 'init-ui)
 (require 'init-vcs)
 (require 'init-themes)
+(require 'init-corfu)
 (require 'init-editor)
 (require 'init-programming)
 (require 'init-global-keybindings)
-
+(require 'init-vertico)
+(require 'init-languages)
 
 ;; use gmch to fix startup
 (use-package gcmh
-  :diminish
+  :diminish gcmh-mode
   :init (setq gc-cons-threshold most-positive-fixnum)
   :hook (emacs-startup . gcmh-mode)
   :custom
   (gcmh-idle-delay 'auto)
   (gcmh-auto-idle-delay-factor 10)
   (gcmh-high-cons-threshold (* 16 1024 1024)))
+;;; init.el ends here

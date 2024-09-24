@@ -1,15 +1,9 @@
-;;; init-programming.el --- Programming defaults -*- lexical-binding: t -*-
-;;
-;; Copyright @ 2024-2024 Charlie Root
-;;
-;; Author: Charlie Root <charlie@charlieroot.dev>
-;; URL: https://charlieroot.dev
+;;; init-vertico.el --- settings for vertico -*- lexical-binding: t -*-
+;;; Commentary:
 
-;; This file is not part of GNU Emacs.
+;; Vertico settings
 
-;; Commentary:
-
-;;; License
+;;; Licence:
 
 ;; This program is free software; you can redistribute it and/or
 ;; modify it under the terms of the GNU General Public License
@@ -26,15 +20,19 @@
 ;; Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 ;; Boston, MA 02110-1301, USA.
 
-;;; Code:
+;;; Code
 
-;; highlight strings like TODO, FIXME, NOTE, HACK, ...
-(use-package hl-todo
-  :diminish
-  :config
-  (global-hl-todo-mode 1))
+(use-package vertico
+  :init
+  (vertico-mode))
 
-(use-package direnv)
+(use-package orderless
+  :custom
+  (completion-styles '(orderless basic))
+  (completion-category-defaults nil)
+  (completion-category-overrides '((file (styles partial-completion)))))  
 
-(provide 'init-programming)
+(provide 'init-vertico)
+;;; init-vertico.el ends here
+
 

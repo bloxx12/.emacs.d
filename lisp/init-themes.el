@@ -2,9 +2,13 @@
 ;;; Commentary:
 ;;; Code:
 
+(use-package modus-themes)
+(use-package ef-themes)
 (use-package zenburn-theme
   :config
-  (load-theme 'zenburn t))
+(load-theme 'zenburn t))
+  
+
 
 (provide 'init-themes)
 ;;; init-themes.el ends here

@@ -1,4 +1,4 @@
-;;; init-ui.el --- Supporess GUI features -*- lexical-binding: t -*-
+;;; init-ui.el --- Suppress GUI features -*- lexical-binding: t -*-
 ;;; Commentary
 
 ;;; Code
@@ -10,6 +10,10 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 
+(fringe-mode '(0 . 0))
+
+(global-display-line-numbers-mode)
+(setq display-line-numbers-type 'relative)
 ;; who ever thought blinking cursors were a good idea?
 (blink-cursor-mode -1)
 
@@ -22,7 +26,8 @@
 
 ;; y/n answers
 (fset 'yes-or-no-p 'y-or-n-p)
-
+(setq confirm-kill-emacs 'yes-or-no-p)
+(setq confirm-kill-processes nil)
 
 (line-number-mode t)
 (column-number-mode t)
@@ -34,7 +39,7 @@
   (setq fontaine-presets
    '((regular
 	  :default-family "Iosevka"
-	  :default-height 100
+	  :default-height 150
 	  :variable-pitch-family "Lexend")))
   (fontaine-set-preset 'regular))
 

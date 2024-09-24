@@ -1,15 +1,15 @@
-;;; init-programming.el --- Programming defaults -*- lexical-binding: t -*-
+;;; init-languages.el --- settings for languages -*- lexical-binding: t -*-
 ;;
-;; Copyright @ 2024-2024 Charlie Root
+;; Copyright @ 2024 Charlie Root
 ;;
-;; Author: Charlie Root <charlie@charlieroot.dev>
+;; Author Charlie Root <charlie@charlieroot.dev>
 ;; URL: https://charlieroot.dev
 
-;; This file is not part of GNU Emacs.
+;;; Commentary:
 
-;; Commentary:
+;; This file enables modes and sets settitngs for all languages I need.
 
-;;; License
+;;; Licence:
 
 ;; This program is free software; you can redistribute it and/or
 ;; modify it under the terms of the GNU General Public License
@@ -26,15 +26,13 @@
 ;; Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 ;; Boston, MA 02110-1301, USA.
 
-;;; Code:
+;;; Code
 
-;; highlight strings like TODO, FIXME, NOTE, HACK, ...
-(use-package hl-todo
-  :diminish
-  :config
-  (global-hl-todo-mode 1))
+(use-package markdown-mode)
+(use-package nix-mode)
 
-(use-package direnv)
+;; lisp
+(use-package smartparens
+  :hook (prog-mode . smartparens-mode))
 
-(provide 'init-programming)
-
+(provide 'init-languages)

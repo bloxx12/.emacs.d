@@ -11,5 +11,6 @@
   :after transient
   :bind
   ("C-x g" . 'magit-status))
+
 (provide 'init-vcs)
 ;;; init-vcs.el ends here
