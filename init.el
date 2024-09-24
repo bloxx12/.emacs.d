@@ -43,3 +43,15 @@
 (require 'init-themes)
 (require 'init-editor)
 (require 'init-programming)
+(require 'init-global-keybindings)
+
+
+;; use gmch to fix startup
+(use-package gcmh
+  :diminish
+  :init (setq gc-cons-threshold most-positive-fixnum)
+  :hook (emacs-startup . gcmh-mode)
+  :custom
+  (gcmh-idle-delay 'auto)
+  (gcmh-auto-idle-delay-factor 10)
+  (gcmh-high-cons-threshold (* 16 1024 1024)))
