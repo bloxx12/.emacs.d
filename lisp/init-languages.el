@@ -41,6 +41,10 @@
   :config
   (global-treesit-auto-mode))
 
+(use-package rustic
+  :mode ("\\.rs'" . rust-mode)
+  :mode ("\\.rs'" . rustic-mode))
+
 (use-package typst-ts-mode
   :ensure (:type git :host sourcehut :repo "meow_king/typst-ts-mode" :files (:defaults "*.el"))
   :custom

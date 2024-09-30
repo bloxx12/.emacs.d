@@ -27,7 +27,10 @@
 ;; Boston, MA 02110-1301, USA.
 
 ;;; Code
-
+(use-package org
+  :config
+  (setq-default org-directory "~/cloud/org")
+  (setq-default org-agenda-files (list org-directory)))
 (use-package org-modern
   :config
   (global-org-modern-mode)

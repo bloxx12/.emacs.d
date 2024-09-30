@@ -51,7 +51,7 @@
 (require 'init-ui)
 (require 'init-vcs)
 (require 'init-themes)
-(require 'init-corfu)
+;; (require 'init-corfu)
 (require 'init-editor)
 (require 'init-programming)
 (require 'init-global-keybindings)
