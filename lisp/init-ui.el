@@ -9,7 +9,7 @@
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
-
+(show-paren-mode 1)
 (fringe-mode '(0 . 0))
 
 (global-display-line-numbers-mode)
@@ -23,7 +23,7 @@
 ;; disable the startup screen
 (setq inhibit-startup-screen t)
 
-
+(set-frame-parameter nil 'alpha-background 85)
 ;; y/n answers
 (fset 'yes-or-no-p 'y-or-n-p)
 (setq confirm-kill-emacs 'yes-or-no-p)

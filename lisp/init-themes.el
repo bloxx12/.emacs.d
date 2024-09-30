@@ -5,7 +5,9 @@
 (use-package zenburn-theme
   :config
 (load-theme 'zenburn t))
-  
+(use-package gruber-darker-theme
+  :config
+  (load-theme 'gruber-darker t))  
 
 
 (provide 'init-themes)

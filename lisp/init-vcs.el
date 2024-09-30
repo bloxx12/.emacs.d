@@ -10,7 +10,8 @@
   :ensure t
   :after transient
   :bind
-  ("C-x g" . 'magit-status))
+  (("C-c m s" . 'magit-status))
+   ("C-c m l" . 'magit-log))
 
 (provide 'init-vcs)
 ;;; init-vcs.el ends here
