@@ -1,11 +1,17 @@
-;;; init-el --- The core of my emcas configuration -*- lexical-binding: t -*-
+;;; init.el --- The core of my configuration -*- lexical-binding: t -*-
+;;
+;; Copyright @ 2024 Charlie Root
+;;
+;; Author Charlie Root <charlie@charlieroot.dev>
+;; URL: https://charlieroot.dev
 
 ;;; Commentary:
 
-;; Welcome dear emacs-intrested individual! This is my personal emacs configuration,
-;; made to be extensible and as simple as feasuble, as complex as needed
+;; Welcome, dear traveler! This is my personal emacs configuration,
+;; made from scratch and with love. Feel free to check things out,
+;; you can also take code of course as long as you respect my license.
 
-;;; License:
+;;; Licence:
 
 ;; This program is free software; you can redistribute it and/or
 ;; modify it under the terms of the GNU General Public License
@@ -22,7 +28,7 @@
 ;; Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 ;; Boston, MA 02110-1301, USA.
 
-;;; Code:
+;;; Code
 
 ;; The entrypoint for all of my configuration files
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
@@ -51,6 +57,7 @@
 (require 'init-global-keybindings)
 (require 'init-vertico)
 (require 'init-languages)
+(require 'init-org)
 
 ;; use gmch to fix startup
 (use-package gcmh

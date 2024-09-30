@@ -23,7 +23,7 @@
 ;; disable the startup screen
 (setq inhibit-startup-screen t)
 
-(set-frame-parameter nil 'alpha-background 85)
+(set-frame-parameter nil 'alpha-background 100)
 ;; y/n answers
 (fset 'yes-or-no-p 'y-or-n-p)
 (setq confirm-kill-emacs 'yes-or-no-p)
