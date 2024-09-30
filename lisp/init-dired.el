@@ -1,4 +1,4 @@
-;;; init-languages.el --- settings for languages -*- lexical-binding: t -*-
+;;; init-dired.el --- Dired settings -*- lexical-binding: t -*-
 ;;
 ;; Copyright @ 2024 Charlie Root
 ;;
@@ -7,7 +7,7 @@
 
 ;;; Commentary:
 
-;; This file enables modes and sets settitngs for all languages I need.
+;; This file configures corfu, a simple completione enginge, to my likings.
 
 ;;; Licence:
 
@@ -28,26 +28,12 @@
 
 ;;; Code
 
-(use-package markdown-mode)
-(use-package nix-mode
-  :mode "\\.nix\\'")
-
-;; lisp
-(use-package smartparens
-  :hook (prog-mode . smartparens-mode))
-
-(use-package treesit-auto
-  :ensure t
+(use-package dired
   :config
-  (global-treesit-auto-mode))
 
-(use-package typst-ts-mode
-  :ensure (:type git :host sourcehut :repo "meow_king/typst-ts-mode" :files (:defaults "*.el"))
-  :custom
-  ;; don't add "--open" if you'd like `watch` to be an error detector
-  (typst-ts-mode-watch-options "--open")
-  
-  (typst-ts-mode-enable-raw-blocks-highlight t)
-  (typst-ts-mode-highlight-raw-blocks-at-startup t))
+  )
 
-(provide 'init-languages)
+(use-package dirvish
+  :init
+
+  :config)
