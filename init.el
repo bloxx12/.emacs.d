@@ -7,7 +7,7 @@
 
 ;;; Commentary:
 
-;; Welcome, dear traveler! This is my personal emacs configuration,
+;; Welcome, fellow human! This is my personal emacs configuration,
 ;; made from scratch and with love. Feel free to check things out,
 ;; you can also take code of course as long as you respect my license.
 

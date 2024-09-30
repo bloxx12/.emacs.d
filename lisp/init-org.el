@@ -1,4 +1,4 @@
-;;; init-editor.el --- sane settings for the editor -*- lexical-binding: t -*-
+;;; init-org.el --- org mode customizations -*- lexical-binding: t -*-
 ;;
 ;; Copyright @ 2024 Charlie Root
 ;;
@@ -32,7 +32,7 @@
   :config
   (global-org-modern-mode)
   :custom
-  (org-pretty-entities t)
+  (org-pretty-entities nil)
   )
 
 (provide 'init-org)
