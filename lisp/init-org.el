@@ -32,10 +32,32 @@
   (setq-default org-directory "~/cloud/org")
   (setq-default org-agenda-files (list org-directory)))
 (use-package org-modern
+  :hook
+  (org-mode . #'org-modern-mode)
   :config
-  (global-org-modern-mode)
-  :custom
-  (org-pretty-entities nil)
-  )
+  (setq org-pretty-entities nil
+		org-auto-align-tags nil
+		org-tags-column 0
+		org-catch-invisible-edits 'show-and-error
+		org-special-ctrl-a/e t
+		org-insert-heading-respect-content t
+
+		;; Org styling, hide markup etc.
+		org-hide-emphasis-markers t
+		org-pretty-entities t
+		
+		;; Agenda styling
+		org-agenda-tags-column 0
+		org-agenda-block-separator ?─
+		org-agenda-time-grid
+		'((daily today require-timed)
+		  (800 1000 1200 1400 1600 1800 2000)
+		  " ┄┄┄┄┄ " "┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄")
+		org-agenda-current-time-string
+		"◀── now ─────────────────────────────────────────────────")
+
+  ;; Ellipsis styling
+  (setq org-ellipsis "…")
+  (set-face-attribute 'org-ellipsis nil :inherit 'default :box nil))
 
 (provide 'init-org)

@@ -1,4 +1,4 @@
-
+;;; init-global-keybindings.el --- global keybinds  -*- lexical-binding: t -*-
 
 ;; use ace-window to move through windows
 (use-package ace-window

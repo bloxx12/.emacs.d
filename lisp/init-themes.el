@@ -28,10 +28,14 @@
 
 ;;; Code
 
-(use-package gruber-darker-theme
+;; (use-package gruber-darker-theme
+;;   :config
+;;   (load-theme 'gruber-darker t))
+(use-package modus-themes)
+(use-package moe-theme)
+(use-package punpun-themes
   :config
-  (load-theme 'gruber-darker t))  
-
+  (load-theme 'punpun-dark t))
 
 (provide 'init-themes)
 ;;; init-themes.el ends here

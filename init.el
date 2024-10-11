@@ -51,13 +51,14 @@
 (require 'init-ui)
 (require 'init-vcs)
 (require 'init-themes)
-;; (require 'init-corfu)
+(require 'init-corfu)
 (require 'init-editor)
 (require 'init-programming)
 (require 'init-global-keybindings)
 (require 'init-vertico)
 (require 'init-languages)
 (require 'init-org)
+(require 'init-debugging)
 
 ;; use gmch to fix startup
 (use-package gcmh
