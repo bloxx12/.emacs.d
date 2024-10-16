@@ -32,10 +32,9 @@
 ;;   :config
 ;;   (load-theme 'gruber-darker t))
 (use-package modus-themes)
-(use-package moe-theme)
-(use-package punpun-themes
+(use-package moe-theme
   :config
-  (load-theme 'punpun-dark t))
+  (load-theme 'moe-dark t))
 
 (provide 'init-themes)
 ;;; init-themes.el ends here
