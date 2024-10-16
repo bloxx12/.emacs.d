@@ -47,7 +47,10 @@
 (use-package diminish)
 
 ;; Packages
-(require 'init-god)
+(require 'init-evil)
+;;(require 'init-meow)
+;;(require 'init-god)
+;;(require 'init-xah-fly-keys)
 (require 'init-ui)
 (require 'init-vcs)
 (require 'init-themes)
