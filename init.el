@@ -60,6 +60,7 @@
 (require 'init-org)
 (require 'init-debugging)
 (require 'init-c)
+(require 'init-lsp)
 
 ;; use gmch to fix startup
 (use-package gcmh

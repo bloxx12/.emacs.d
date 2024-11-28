@@ -29,8 +29,6 @@
 ;;; Code
 
 (use-package markdown-mode)
-(use-package nix-mode
-  :mode "\\.nix\\'")
 
 ;; lisp
 (use-package smartparens
@@ -39,10 +37,6 @@
 (use-package treesit-auto
   :config
   (global-treesit-auto-mode))
-
-(use-package rustic
-  :mode ("\\.rs'" . rust-mode)
-  :mode ("\\.rs'" . rustic-mode))
 
 (use-package typst-ts-mode
   :ensure (:type git :host sourcehut :repo "meow_king/typst-ts-mode" :files (:defaults "*.el"))

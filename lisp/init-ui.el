@@ -47,8 +47,6 @@
 (show-paren-mode 1)
 (fringe-mode '(0 . 0))
 (display-time-mode 1)
-;;(global-display-line-numbers-mode)
-(setq display-line-numbers-type 'relative)
 ;; who ever thought blinking cursors were a good idea?
 (blink-cursor-mode -1)
 
@@ -67,6 +65,9 @@
 (line-number-mode nil)
 (column-number-mode t)
 (size-indication-mode t)
+
+;; Hide the mode line
+(setq-default mode-line-format nil)
 
 
 (use-package fontaine

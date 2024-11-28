@@ -60,9 +60,6 @@
   :diminish
   :hook (after-init . ws-butler-global-mode))
 
-(use-package rainbow-delimiters
-  :hook (prog-mode . rainbow-delimiters-mode))
-
 
 (provide 'init-editor)
 ;;; init-editor.el ends here
