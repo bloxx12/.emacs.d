@@ -5,7 +5,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("9f986dcc0de26c1c8b6dfd749eb7351b1a3c8db31b3330a7dfdd25be1b47cb22"
+   '("9a977ddae55e0e91c09952e96d614ae0be69727ea78ca145beea1aae01ac78d2"
+	 "e410458d3e769c33e0865971deb6e8422457fad02bf51f7862fa180ccc42c032"
 	 default)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

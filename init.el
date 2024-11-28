@@ -47,10 +47,7 @@
 (use-package diminish)
 
 ;; Packages
-(require 'init-evil)
-;;(require 'init-meow)
-;;(require 'init-god)
-;;(require 'init-xah-fly-keys)
+(require 'init-god)
 (require 'init-ui)
 (require 'init-vcs)
 (require 'init-themes)
@@ -62,6 +59,7 @@
 (require 'init-languages)
 (require 'init-org)
 (require 'init-debugging)
+(require 'init-c)
 
 ;; use gmch to fix startup
 (use-package gcmh

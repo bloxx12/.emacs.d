@@ -28,15 +28,26 @@
 
 ;;; Code
 
+(setq default-frame-alist      (append (list
+	           '(min-height . 1)
+               '(height     . 45)
+	           '(min-width  . 1)
+               '(width      . 81)
+               '(vertical-scroll-bars . nil)
+               '(internal-border-width . 24)
+               '(left-fringe    . 1)
+               '(right-fringe   . 1)
+               '(tool-bar-lines . 0)
+               '(menu-bar-lines . 0))))
+
+
 (setq use-dialog-box nil)
 (setq inihibit-startup-screen t)
-(tool-bar-mode -1)
-(menu-bar-mode -1)
 (scroll-bar-mode -1)
 (show-paren-mode 1)
 (fringe-mode '(0 . 0))
 (display-time-mode 1)
-(global-display-line-numbers-mode)
+;;(global-display-line-numbers-mode)
 (setq display-line-numbers-type 'relative)
 ;; who ever thought blinking cursors were a good idea?
 (blink-cursor-mode -1)
@@ -53,7 +64,7 @@
 (setq confirm-kill-emacs 'yes-or-no-p)
 (setq confirm-kill-processes nil)
 
-(line-number-mode t)
+(line-number-mode nil)
 (column-number-mode t)
 (size-indication-mode t)
 
@@ -62,8 +73,8 @@
   :config
   (setq fontaine-presets
    '((regular
-	  :default-family "Iosevka"
-	  :default-height 150
+	  :default-family "Iosevka Nerd Font"
+	  :default-height 140
 	  :variable-pitch-family "Lexend")))
   (fontaine-set-preset 'regular))
 

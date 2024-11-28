@@ -28,13 +28,12 @@
 
 ;;; Code
 
-;; (use-package gruber-darker-theme
-;;   :config
-;;   (load-theme 'gruber-darker t))
+(use-package nano-theme)
 (use-package modus-themes)
+(use-package color-theme-sanityinc-tomorrow)
 (use-package moe-theme
   :config
-  (load-theme 'moe-dark t))
+  (load-theme 'nano-light t))
 
 (provide 'init-themes)
 ;;; init-themes.el ends here

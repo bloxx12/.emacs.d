@@ -34,6 +34,9 @@
 ;; delete the current selection with a keypress
 (delete-selection-mode t)
 
+;; smart tab behavior - indent or complete
+(setq tab-always-indent 'complete)
+
 ;; save any backup files in /tmp/ to keep projects clean
 (setq backup-directory-alist
           `((".*" . ,temporary-file-directory)))
