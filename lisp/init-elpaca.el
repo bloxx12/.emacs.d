@@ -29,7 +29,7 @@
 ;;; Code
 
 ;; TODO: make this configurable easily
-(setq elpaca-core-date '(20240923)) ;; set to the build date of Emacs
+(setq elpaca-core-date '(20241023)) ;; set to the build date of Emacs
 
 
 (defvar elpaca-installer-version 0.7)
